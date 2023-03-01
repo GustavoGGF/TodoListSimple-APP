@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <title>lista</title>
+  </head>
+  <body>
+    <div id="task-cointainer">
+      <div id="tasks-header">
+        <h2>Informe sua tarefa</h2>
+        <form id="task-form">
+          <input type="text" id="task-title" />
+          <button id="add-btn" type="submit">
+            <ion-icon name="add-circle-outline"></ion-icon>
+          </button>
+        </form>
+      </div>
+      <div id="task-list-container">
+        <h2>Suas tarefas:</h2>
+        <ul id="task-list">
+          <li class="task-box template hide">
+            <span class="task-title">teste</span>
+            <ion-icon
+              class="done-btn"
+              name="checkmark-circle-outline"
+            ></ion-icon>
+            <ion-icon class="remove-btn" name="trash-outline"></ion-icon>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="/src/services/index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
